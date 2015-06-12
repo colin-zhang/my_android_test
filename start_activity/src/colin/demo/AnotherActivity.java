@@ -1,4 +1,6 @@
-package com.hmkcode.android;
+package colin.demo;
+
+import colin.demo.R;
 
 import android.app.Activity;
 import android.os.Bundle;
