@@ -3,6 +3,7 @@ package com.hmkcode.android;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -15,6 +16,12 @@ public class MainActivity extends Activity implements OnClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		if(savedInstanceState != null){
+			String test = savedInstanceState.getString("test");
+			Log.d("Test",test);
+			
+		}
 		
 		btnStartAnotherActivity = (Button) findViewById(R.id.btnStartAnotherActivity);
 		
@@ -32,6 +39,12 @@ public class MainActivity extends Activity implements OnClickListener {
 		});
 	}
 
+	@Override
+	protected void onSaveInstanceState(Bundle outState) {
+		// TODO Auto-generated method stub
+		super.onSaveInstanceState(outState);
+		outState.putString("test", "colin");
+	}
 
 	@Override
 	public void onClick(View view) {
@@ -43,5 +56,42 @@ public class MainActivity extends Activity implements OnClickListener {
 		
 		 	startActivity(inent);
 	}
+	
+	protected void onResume() {
+        super.onResume();
+        Log.v("Test","onResume");
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.v("Test","onStart");
+    }
+
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.v("Test","onRestart");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.v("Test","onPause");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.v("Test","onStop");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.v("Test", "onDestroy");
+    }
+
 
 }
