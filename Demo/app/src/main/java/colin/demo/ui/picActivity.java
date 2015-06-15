@@ -9,7 +9,7 @@ import colin.demo.R;
 import colin.demo.base.MyActivity;
 
 
-public class picActivity extends ActionBarActivity {
+public class PicActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

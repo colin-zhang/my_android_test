@@ -7,20 +7,37 @@
         android:icon="@drawable/demo_icon_64"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+
         <activity
-            android:name=".ui.picActivity"
+            android:name=".main.MainActivity"
+            android:label="@string/main_activity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.UIActivity"
+            android:label="@string/title_activity_ui" >
+        </activity>
+
+        <activity
+            android:name=".ui.PicActivity"
             android:label="@string/title_activity_pic" >
         </activity>
 
         <activity
-            android:name=".main.MainActivity"
-            android:label="@string/main_activity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-
+            android:name=".ui.ButtonActivity"
+            android:label="@string/title_activity_button"
+            android:parentActivityName=".ui.UIActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="colin.demo.ui.UIActivity"/>
         </activity>
+        
+
+
 
     </application>
 

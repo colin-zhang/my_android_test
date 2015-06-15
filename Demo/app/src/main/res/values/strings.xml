@@ -5,4 +5,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="main_activity">demo</string>
+    <string name="title_activity_ui">UIActivity</string>
+    <string name="title_activity_button">ButtonActivity</string>
+    <string name="title_list_activity">List Activity</string>
 </resources>
