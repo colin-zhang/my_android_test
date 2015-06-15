@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="main_list_item">
+        <item>Project</item>
+        <item>UI demo</item>
+        <item>NetWork demo</item>
+        <item>Sensor demo</item>
+        <item>Service demo</item>
+        <item>Store demo</item>
+    </array>
+
+    <array name="ui_list_item">
+        <item>demo</item>
+        <item>ListViewActivity</item>
+        <item>Button</item>
+        <item>Layout</item>
+        <item>ListView</item>
+        <item>Picture</item>
+        <item>LayoutInflater</item>
+
+    </array>
+
+
+    <array name="colors">
+        <item>red</item>
+        <item>orange</item>
+        <item>yellow</item>
+        <item>green</item>
+        <item>blue</item>
+        <item>indigo</item>
+        <item>violet</item>
+        <item>aqua</item>
+        <item>black</item>
+        <item>fuchsia</item>
+        <item>gray</item>
+        <item>grey</item>
+        <item>lime</item>
+        <item>maroon</item>
+        <item>navy</item>
+        <item>olive</item>
+        <item>purple</item>
+        <item>silver</item>
+        <item>teal</item>
+        <item>white</item>
+    </array>
+
+</resources>

@@ -35,7 +35,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="colin.demo.ui.UIActivity"/>
         </activity>
-        
+
+        <activity
+            android:name=".ui.LayoutInflaterDemo"
+            android:label="@string/title_activity_layout_inflater"
+            android:parentActivityName=".ui.UIActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="colin.demo.ui.UIActivity"/>
+        </activity>
+
 
 
 
